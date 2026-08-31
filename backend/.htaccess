@@ -1,0 +1,11 @@
+# Apache .htaccess configuration for STOCKTRACK Backend
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ router.php [QSA,L]
+
+# Security: Deny direct web access to sqlite database files
+<FilesMatch "\.(sqlite|db)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

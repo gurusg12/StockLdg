@@ -1,0 +1,6 @@
+{
+  "name": "STOCKTRACK",
+  "description": "Professional Inventory and Stock Management System for Businesses",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
